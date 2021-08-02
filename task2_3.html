@@ -13,6 +13,22 @@
 
     'use strict';
 
+    // let a = 10, b = -50;
+    let a = +prompt("введите число а");
+    let b = +prompt("введите число b");
+
+    if (a >= 0 && b >= 0) {
+      let result = a - b;
+      console.log(result);
+    } else if (a < 0 && b < 0) {
+      let result = a * b;
+      console.log(result);
+    } else if (a >= 0 && b < 0 || a < 0 && b >=0) {
+      let result = a + b;
+      console.log(result);
+    } 
+    
+
   </script>
 </body>
 
