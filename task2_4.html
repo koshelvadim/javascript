@@ -13,6 +13,39 @@
 
     'use strict';
 
+    function getSumma() {
+      let summa = a + b;
+      return summa;
+    }
+
+    function getSubtract() {
+      let subtract = a - b;
+      return subtract;
+    }
+
+    function getMultiply() {
+      let multiply = a * b;
+      return multiply;
+    }
+
+    function getDivsion() {
+      let division = a / b;
+      return division;
+    }
+    
+    let a = +prompt("Введите первое число");
+    let b = +prompt("Введите второе число");
+
+    let resultSumma = getSumma();
+    let resultSubtract = getSubtract();
+    let resultMltiply = getMultiply();
+    let resultDivision = getDivsion();
+
+    alert(`Сумма чисел равна ${resultSumma}`);
+    alert(`Разность чисел равна ${resultSubtract}`);
+    alert(`Произведение чисел равно ${resultMltiply}`);
+    alert(`Частное чисел равно ${resultDivision}`);
+
   </script>
 </body>
 
