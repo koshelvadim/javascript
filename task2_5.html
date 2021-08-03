@@ -13,6 +13,51 @@
 
     'use strict';
 
+    function mathOperation(arg1, arg2, operation) {
+     
+      switch (operation) {
+        case "сумма":
+          function getSumma() {
+            let summa = arg1 + arg2;
+            return summa;
+          }
+          let resultSumma = getSumma(); 
+          alert(`${operation} чисел равна ${resultSumma}`);
+          break;       
+        case "разность":
+          function getSubtract() {
+            let subtract = arg1 - arg2;
+            return subtract;
+          }
+          let resultSubtract = getSubtract();
+          alert(`${operation} чисел равна ${resultSubtract}`);
+          break;
+        case "произведение":
+          function getMultiply() {
+            let multiply = arg1 * arg2;
+            return multiply;
+          }
+          let resultMltiply = getMultiply();
+          alert(`${operation} чисел равно ${resultMltiply}`);
+          break;
+        case "деление":
+          function getDivsion() {
+            let division = arg1 / arg2;
+            return division;
+          }
+          let resultDivision = getDivsion();
+          alert(`${operation} чисел равно ${resultDivision}`);
+        default:
+          break;
+      }
+      return operation
+    }
+
+    let arg1 = +prompt("введите первое число");
+    let arg2 = +prompt("введите второе число");
+    let operation = prompt("введите арифметическую операцию:сумма, разность, произведение или деление");
+    let result = mathOperation(arg1, arg2, operation);
+
   </script>
 </body>
 
