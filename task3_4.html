@@ -13,39 +13,39 @@
 
     'use strict';
 
-    function getSumma() {
-      let summa = a + b;
-      return summa;
-    }
-
-    function getSubtract() {
-      let subtract = a - b;
-      return subtract;
-    }
-
-    function getMultiply() {
-      let multiply = a * b;
-      return multiply;
-    }
-
-    function getDivsion() {
-      let division = a / b;
-      return division;
-    }
+    const products = [ 
+    { id: 3, 
+      price: 127, 
+      photos: [ "1.jpg", 
+                "2.jpg",] 
+    }, 
+    { id: 5, 
+      price: 499, 
+      photos: [] 
+    }, 
+    { id: 10, 
+      price: 26, 
+      photos: [ "3.jpg" ] 
+    }, 
+    { id: 8, 
+      price: 78, 
+    }, 
+  ]; 
+    // получить все товары у кторых есть фотографии
+    let prodctsPhotos = products.filter(object => "photos" in object && object.photos.length > 0);
+    console.log(prodctsPhotos);
+    // отсортировать по возрастанию цены
+    products.sort(function(a, b){
+      if (a.price > b.price) {
+        return 1;
+      }
+      if (a.price < b.price) {
+        return -1;
+      }
+      return 0;
+    });
+    console.log(products);
     
-    let a = +prompt("Введите первое число");
-    let b = +prompt("Введите второе число");
-
-    let resultSumma = getSumma();
-    let resultSubtract = getSubtract();
-    let resultMltiply = getMultiply();
-    let resultDivision = getDivsion();
-
-    alert(`Сумма чисел равна ${resultSumma}`);
-    alert(`Разность чисел равна ${resultSubtract}`);
-    alert(`Произведение чисел равно ${resultMltiply}`);
-    alert(`Частное чисел равно ${resultDivision}`);
-
   </script>
 </body>
 
