@@ -13,20 +13,24 @@
 
     'use strict';
 
-    // let a = 10, b = -50;
-    let a = +prompt("введите число а");
-    let b = +prompt("введите число b");
+    const products = [
+       {id: 3, 
+        price: 200,}, 
+       {id: 4, 
+         price: 900,}, 
+       {id: 1, 
+        price: 1000,}, 
+      ];
 
-    if (a >= 0 && b >= 0) {
-      let result = a - b;
-      console.log(result);
-    } else if (a < 0 && b < 0) {
-      let result = a * b;
-      console.log(result);
-    } else if (a >= 0 && b < 0 || a < 0 && b >=0) {
-      let result = a + b;
-      console.log(result);
-    } 
+    let discount = 0.85; // скидка 15%
+
+    products.forEach(function(number){
+        console.log(`Была цена - ${number.price}`);
+        number.price = number.price * discount;
+        console.log(`Стала цена со скидкой 15% - ${number.price}`);
+      }
+    );
+    console.log(products); // вывод массива с ценой со скидкой
     
 
   </script>
