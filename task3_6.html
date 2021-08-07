@@ -13,38 +13,13 @@
 
     'use strict';
 
-    let userCash = prompt("Введите сумму в рублях для зачисления на счёт");
-    let word = "";
-    // проверяем исключения для "рублей"
-    if(userCash == "11" || userCash == "12" || userCash == "13" || userCash == "14"){ 
-      word = "рублей";
-    } 
-    else {  
-      word = lastword();
+    let strokaX = ""; //пустая строчка
+    for (let i = 0; i < 20; i++) {
+      // strokaX += 'x';
+      strokaX = strokaX + "X"
+      console.log(strokaX);
     }
-
-    function lastword() {
-      let userCashlength = userCash.length; // вычисляем длину суммы
-      let lastNumber = Number(userCash.charAt(userCashlength - 1));  // вычисляем методом .charAt последний символ суммы
-      switch (lastNumber) {  // сверяем последний символ с содержимым кейсов
-        case 1:
-          return "рубль";      
-        case 2:
-        case 3:
-        case 4:
-          return "рубля";       
-        case 0:        
-        case 5: 
-        case 6:
-        case 7: 
-        case 8:
-        case 9:
-          return "рублей";         
-      }
-    }
-
-    alert(`Ваша сумма в ${userCash} ${word} успешно зачислена.`);
-  
+   
   </script>
 </body>
 
