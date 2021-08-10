@@ -12,6 +12,24 @@
     <script>
     
         'use strict';
+   
+        function getDigits(userNumber) {
+            if (!Number.isInteger(userNumber) || userNumber > 999 || userNumber < 0) {
+                console.log("Введите целое число от 0 до 999");  
+                return{};
+            }
+            return{
+                units: userNumber % 10,
+                tens:(Math.floor(userNumber / 10) % 10),
+                hundreds: Math.floor(userNumber / 100),
+            }
+        }
+
+        console.log(getDigits(469));
+        console.log(getDigits(1023));
+
+              
+        
 
     </script>
 </body>
