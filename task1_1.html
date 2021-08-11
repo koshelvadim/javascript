@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+  </head>
+
+  <body>
+    <script>
+
+        "use strict";
+
+        // ES5
+        
+        //делаем конструктор Product
+        function Product(name, price) {
+        this.name = name;
+        this.price = price;
+        }
+        //метод скидки прописываем отдельно через prototype
+        Product.prototype.make25percentDiscount = function (discount) {
+            this.price = this.price - (this.price / 100) * discount;
+        };
+        //делаем массив с услугами
+        const products = [
+        new Product("Педикюр", "5000"),
+        new Product("Маникюр", "4000"),
+        new Product("СПА", "1500"),
+        ];
+        //перебираем массив с помощью for of и применяем скидку
+        for (let product of products) {
+            product.make25percentDiscount(25);
+        }
+        //вывод массива услуг со скидкой
+        console.log(products);
+
+
+        // ES6
+
+        // class Product{
+        //     constructor(name, price){
+        //         this.name = name;
+        //         this.price = price;
+        //     }
+        //     make25percentDiscount(discount) {
+        //     this.price = this.price - (this.price / 100) * discount;
+        //     }
+        // }
+        // const products = [
+        //     new Product("Педикюр", "5000"),
+        //     new Product("Маникюр", "4000"),
+        //     new Product("СПА", "1500"),
+        // ];
+       
+        // for (let product of products) {
+        //     product.make25percentDiscount(25);
+        // }
+       
+        // console.log(products);
+
+    </script>
+  </body>
+</html>
