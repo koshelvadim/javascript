@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework</title>
+</head>
+
+<body>
+  <script>
+
+    'use strict';
+
+    // // ES5
+
+    // создаем конструктор со свойствами
+    function Post(author, text, date) {
+      this.author = author;
+      this.text = text;
+      this.date = date;
+    }
+    // добавляем метод, принимающий текст и записывающий его в свойтво text объекта
+    Post.prototype.edit = function() {
+      this.text = prompt('Введите любой текст для вывода в свойстве text');
+    };
+    //создаем конструктор
+    function AttachedPost(author, text, date, highlighted){
+      Post.call(this, author, text, date);  //унаследование свойств от Post 
+      this.highlighted = highlighted;
+    }
+    //содаем прослойку для того чтобы прототипы не указывали на одну и ту же область
+    //при этом теряется свойство конструктор
+    AttachedPost.prototype = Object.create(Post.prototype); //унаследование метода от Post
+    //добавляем конструктор руками
+    AttachedPost.prototype.constructor = AttachedPost;
+    //добавляем свой метод для AttachedPost, который присваивает свойству highlighted значение true
+    AttachedPost.prototype.makeTextHighlighted = function(){
+      this.highlighted = true;
+    };
+
+    let object1 = new Post('Vadim', 'Hi world', '12.08.2021'); //создаём объект конструктора Post
+    let object2 = new AttachedPost('Vadim', 'Hi world', '12.08.2021', 'false'); //создаём объект конструктора AttachedPost
+    object1.edit(); // вызываем функцию edit для объекта1
+    object2.edit(); // вызываем функцию edit для объекта2
+    object2.makeTextHighlighted(); // вызываем функцию makeTextHighlighted для объекта2
+    console.log(object1); // вывод в консоль объекта1
+    console.log(object2); // вывод в консоль объекта2
+
+    // ES6
+
+    // class Post{
+    //   constructor(author, text, date) {
+    //   this.author = author;
+    //   this.text = text;
+    //   this.date = date;
+    //   }
+
+    //   edit() {
+    //     this.text = prompt('Введите любой текст для вывода в свойстве text');
+    //   }
+    // }
+
+    // class AttachedPost extends Post{
+    //   constructor(author, text, date, highlighted){
+    //     super(author, text, date);  //унаследование свойств и методов от Post 
+    //     this.highlighted = highlighted;
+    //   }
+
+    //   makeTextHighlighted(){
+    //     this.highlighted = true;
+    //   }
+    // }
+
+    // let object1 = new Post('Vadim', 'Hi world', '12.08.2021');
+    // let object2 = new AttachedPost('Vadim', 'Hi world', '12.08.2021', 'false');
+    // object1.edit();
+    // object2.edit();
+    // object2.makeTextHighlighted();
+    // console.log(object1);
+    // console.log(object2);
+    
+  </script>
+</body>
+
+</html>
