@@ -13,5 +13,19 @@
     2. Затем обратитесь к списку классов и с помощью метода contains()
     проверьте есть ли класс hidden у этого тега.
      -->
+     <script>
+       
+        "use strict";
+
+        let tegs = document.querySelector('div');
+        let classes = tegs.classList.contains('hidden');
+
+        if (classes === true){
+            console.log('Класс "hidden" есть!');
+        } else {
+            console.log('Класса "hidden" нет!');  
+        };
+  
+    </script>
 </body>
 </html>

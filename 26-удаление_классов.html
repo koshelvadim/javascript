@@ -23,5 +23,19 @@
     1. Найдите все "карточки" с классом .card.
     2. Проверьте есть ли у карточки класс hidden с помощью метода contains(),
     и если есть, то удалите с помощью метода remove(). -->
+    <script>
+
+        "use strict";
+
+        let card = document.querySelectorAll('.card');
+        card.forEach(function(nodeList){
+            let classHidden = nodeList.classList.contains('hidden');
+            if (classHidden === true) {
+                nodeList.classList.remove('hidden');
+            }
+        });
+        console.log(card); // выводим список узлов без класса "hidden"
+        
+    </script>
 </body>
 </html>

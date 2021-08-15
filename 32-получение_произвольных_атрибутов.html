@@ -22,4 +22,21 @@
     каждого атрибута и выведите в консоль.
     -->
 </body>
+<script>
+
+    "use strict";
+
+    let div = document.querySelector('div');
+    
+    div.addEventListener('click', clickDiv);
+
+    function clickDiv(event){
+        let attr = event.target.attributes;
+        for (let i = 0; i < attr.length; i++) {
+            const element = attr[i];
+            console.log(element);
+        }
+    }
+    
+</script>
 </html>

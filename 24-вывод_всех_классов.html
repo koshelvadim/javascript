@@ -15,7 +15,15 @@
     3. C помощью forEach переберите classes и выведите каждый класс в консоль.
      -->
 
-    <script>
+     <script>
+       
+        "use strict";
+
+        let tegs = document.querySelector('div');
+        let classes = tegs.classList;
+        classes.forEach(function(nameClasses){
+            console.log(nameClasses);
+        });
         
     </script>
 </body>

@@ -19,7 +19,19 @@
     -->
 
     <script>
+
+        "use strict";
+
+        let listTegs = document.querySelectorAll('b');
         
+        listTegs.forEach(function(teg){
+            let classSign = teg.classList.contains('sign');
+            if (classSign !== true){
+                teg.classList.add('sign');
+            }
+        });
+        console.log(listTegs); //выводим список узлов с добавленными классами sign
+
     </script>
 </body>
 </html>

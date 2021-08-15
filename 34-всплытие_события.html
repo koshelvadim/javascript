@@ -24,7 +24,33 @@
     объект события, передаваемый в функцию-обработчик клика. -->
 
     <script>
-        
+
+        "use strict";
+
+        let i = 1; // глобальная переменная для номера класса button
+        let j = 1; // глобальная переменная для номера класса li
+        //получаем список всех button 
+        let listTegs = document.querySelectorAll('button');
+        //присваиваем button разные классы для их идентификации
+        listTegs.forEach(function(teg){
+            teg.classList.add(`classButton${i}`);
+            i++;
+        });
+        //получаем список всех li
+        let listTegsLi = document.querySelectorAll('li');
+        //присваиваем li разные классы для их идентификации
+        listTegsLi.forEach(function(teg){
+            teg.classList.add(`classLi${j}`);
+            j++;
+        });
+        //делаем обработчик клика по тегу ul
+        let tegUl = document.querySelector('ul');
+
+        tegUl.addEventListener('click', function(event){
+            console.dir(event.target); //выводим в консоль элемент на котором произошел rkbr
+        });
+    
+
     </script>
 </body>
 </html>
