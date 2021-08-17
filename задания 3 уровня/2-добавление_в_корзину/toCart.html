@@ -42,10 +42,19 @@
 
     <script>
         
+        "use strict";
 		
+        let listButton = document.querySelectorAll('button');
+
+        listButton.forEach(function(button){
+            button.addEventListener('click', buttonClickHandler)
+        });
+
 		function buttonClickHandler(event) {
-		
+            event.target.parentNode.style.background = "lightgreen";
+            event.target.innerText = "Добавлено";
 		}
+        
     </script>
 </body>
 </html>

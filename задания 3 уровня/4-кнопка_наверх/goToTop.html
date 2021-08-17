@@ -27,6 +27,19 @@
     -->
 
     <script>
+
+        "use strict";
+
+        let goToTopEl = document.getElementById('goToTop');
+
+        window.addEventListener('scroll', function(){
+    
+            if(window.pageYOffset >= 500){
+            goToTopEl.style.display = "flex";
+            } 
+            else {goToTopEl.style.display = "none";
+            }
+        });
         
     </script>
 </body>
