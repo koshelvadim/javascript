@@ -21,6 +21,16 @@
 
     <script>
         
+        "use strict";
+
+        let listButton = document.querySelectorAll('button');
+        
+        listButton.forEach(function(button){
+            button.addEventListener('click', function(event){
+                console.log(event.target.dataset);
+            });
+        });
+        
     </script>
 </body>
 </html>
