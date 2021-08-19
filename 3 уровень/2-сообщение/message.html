@@ -29,6 +29,7 @@
         "use strict";
         let linkButton = document.querySelector('button');
         let linkDiv = document.querySelector('.message');
+        let audioEl = new Audio('notification.mp3');
 
         linkButton.addEventListener('click', clickHandler);
 
@@ -36,7 +37,8 @@
             //высота подъема сообщения + 20px т.к. сообщение ниже 
             // см. стили top: .....+20px
             let heightMessage = linkDiv.clientHeight + 20; 
-            linkDiv.style.transform = `translateY(-${heightMessage}px)`
+            linkDiv.style.transform = `translateY(-${heightMessage}px)`;
+            audioEl.play();
         }
         
     </script>
