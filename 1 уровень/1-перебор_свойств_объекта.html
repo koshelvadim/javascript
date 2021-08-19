@@ -7,12 +7,18 @@
 </head>
 <body>
     <script>
+
+        "use strict";
+        
         const products = {
             one: "один",
             two: "два",
             three: "три",
         };
 
+        for (let productProperty in products){
+            console.log(`свойство - ${productProperty}; значение - ${products[productProperty]};`);
+        }
         /* 
         Задание.
         Используя цикл for in переберите объект products, ведите в консоль
