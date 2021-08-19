@@ -26,6 +26,18 @@
     -->
 
     <script>
+        "use strict";
+        let linkButton = document.querySelector('button');
+        let linkDiv = document.querySelector('.message');
+
+        linkButton.addEventListener('click', clickHandler);
+
+        function clickHandler(event){
+            //высота подъема сообщения + 20px т.к. сообщение ниже 
+            // см. стили top: .....+20px
+            let heightMessage = linkDiv.clientHeight + 20; 
+            linkDiv.style.transform = `translateY(-${heightMessage}px)`
+        }
         
     </script>
 </body>
