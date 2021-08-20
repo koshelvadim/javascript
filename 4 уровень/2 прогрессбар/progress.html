@@ -26,6 +26,10 @@
             div.style.background = `linear-gradient(90deg, rgba(38,255,162,1) ${percent}%, rgba(255,255,255,1) ${percent}%)`;
         }
 
+        for (let i = 0; i <= 100; i++) {
+            setTimeout(function(){
+                changeProgress(i)}, i * 10);   
+        }
         /* 
         Вам нужно в цикле for создать отложенные вызовы с помощью setTimeout. Т.е. в цикле должны
         быть вызовы функции setTimeout.

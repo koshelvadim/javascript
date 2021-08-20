@@ -3,12 +3,18 @@
 Разметка товара:
 
 <div class="product">
-    <div>${здесь_название_товара}</div>
-    <img src="${здесь путь до картинки}" alt="">
-    <div>${здесь_цена}</div>
-    <a href="https://example.com/producs/${здесь_id_товара}">Подробнее</a>
+        <div>${здесь_название_товара}</div>
+        <img src="${здесь путь до картинки}" alt="">
+        <div>${здесь_цена}</div>
+        <a href="https://example.com/producs/${здесь_id_товара}">Подробнее</a>
 </div>
 */
+let listButtons = document.querySelectorAll('button');
+let linkProducts = document.querySelector('.products');
+
+listButtons.forEach(function(button){
+    button.addEventListener('click', clickHandler);
+});
 
 const products = {
     phones: [
@@ -75,17 +81,16 @@ const products = {
     ],
 };
 
-
 /**
  * Эта функция должна вызываться при клике по кнопкам.
  * @param {MouseEvent} event
  */
-function clickHandler(event) {
+function clickHandler(event) {  
     //вам нужно очищать содержимое .products
-    
+    linkProducts.innerHTML = "";  
     //в showCategory надо передать строку с типом категории, тип берите
     //из атрибута data-type у кнопки, по которой кликнули.
-    
+    showCategory(event.target.dataset.type);
 }
 
 /**
@@ -96,7 +101,9 @@ function clickHandler(event) {
  * по которой кликнули.
  */
 function showCategory(category) {
-    
+    for (let i = 0; i < products[category].length; i++) {
+        getProductMarkup(products[category][i]);  
+    };
 }
 
 /**
@@ -109,5 +116,11 @@ function showCategory(category) {
  * в верху этого файла.
  */
 function getProductMarkup(product) {
-
+    linkProducts.insertAdjacentHTML('afterbegin',
+    `<div class="product">
+        <div>${product.name}</div>
+        <img src="${product.imageUrl}" alt="">
+        <div>${product.price}</div>
+        <a href="https://example.com/producs/${product.id}">Подробнее</a>
+    </div>`);
 }
