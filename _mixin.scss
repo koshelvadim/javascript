@@ -1,0 +1,17 @@
+@mixin cont-center {
+    max-width: $width-cont;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+@mixin cont-xl-center {
+    max-width: $width-cont-xl;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+@mixin cont-fluid-center {
+    max-width: $width-cont-fluid;
+    margin: 0 auto;
+    padding: 0 3%;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INERNET-SHOP</title>
+    <script src="https://kit.fontawesome.com/d5b67c0e16.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container_fluid bg_dark">
+            <nav class="container top">
+                <div class="navbar_left">
+                    <a href="index.html"><img src="images/logo.svg" alt="picture"></a>
+                    <input type="checkbox" id="search">
+                    <label for="search" class="menu_padding"><i class="fas fa-search"></i></label>
+                    <form class="menu_search">
+                        <input type="search" class="menu_search_input" placeholder="Search" aria-label="Search"/>
+                    </form>
+                </div>
+                <div class="navbar_right">
+                    <input type="checkbox" id="menu" checked>
+                    <label for="menu" class="menu_padding"><i class="fas fa-bars"></i></label>
+                    <nav class="main_menu">
+                        <label for="menu" class="close_item">
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <h5 class="text_menu_box_h5">Menu</h5>
+                        <a href="catalog.html" class="menu_link_h6">
+                            <h6 class="text_menu_box_h6">Men</h6>
+                        </a>
+                        <a href="#" class="menu_link">Accessories</a>
+                        <a href="#" class="menu_link">Bags</a>
+                        <a href="#" class="menu_link">Denim</a>
+                        <a href="#" class="menu_link">T-Shirts</a>
+                        <a href="catalog.html" class="menu_link_h6">
+                            <h6 class="text_menu_box_h6">Women</h6>
+                        </a>
+                        <a href="#" class="menu_link">Accessories</a>
+                        <a href="#" class="menu_link">Jackets & Coats</a>
+                        <a href="#" class="menu_link">Polos</a>
+                        <a href="#" class="menu_link">T-Shirts</a>
+                        <a href="#" class="menu_link">Shirts</a>
+                        <a href="catalog.html" class="menu_link_h6">
+                            <h6 class="text_menu_box_h6">Kids</h6>
+                        </a>
+                        <a href="#" class="menu_link">Accessories</a>
+                        <a href="#" class="menu_link">Jackets & Coats</a>
+                        <a href="#" class="menu_link">Polos</a>
+                        <a href="#" class="menu_link">T-Shirts</a>
+                        <a href="#" class="menu_link">Shirts</a>
+                        <a href="#" class="menu_link">Bags</a>
+                    </nav>
+                    <a class="menu_padding vision_none" href="registration.html"><i class="far fa-user"></i></a>
+                    <a class="menu_padding vision_none" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="cart">
+        <div class="catalog_header_bg">
+            <div class="container catalog_header">
+                <div class="catalog_header_text">
+                    <h2 class="catalog_header_text_h2">shopping cart</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container cart_shoping_wrap">
+            <div class="cart_shoping_cart_left">
+                <div class="cart_shoping_cart">
+                    <a href="catalog.html" class="cart_shoping_cart_link">
+                        <img class="cart_shoping_image" src="images/cart_shoping_cart_image_1.png" alt="picture">
+                    </a>
+                    <div class="cart_shoping_cart_text">
+                        <p class="cart_text_name">mango people t-shirt</p>
+                        <p class="cart_text_price">Price: </p>
+                        <p class="cart_text_color">Color: </p>
+                        <p class="cart_text_size">Size: </p>
+                        <p class="cart_text_quantity">Quantity: <input class="cart_input_quantity" type="number"
+                                max="99" min="1" value="1"></p>
+                    </div>
+                    <a href="#"><i class="fas fa-times cart_shoping_close_button"></i></a>
+                </div>
+                <div class="cart_shoping_cart">
+                    <a href="catalog.html" class="cart_shoping_cart_link">
+                        <img class="cart_shoping_image" src="images/cart_shoping_cart_image_2.png" alt="picture">
+                    </a>
+                    <div class="cart_shoping_cart_text">
+                        <p class="cart_text_name">mango people t-shirt</p>
+                        <p class="cart_text_price">Price: </p>
+                        <p class="cart_text_color">Color: </p>
+                        <p class="cart_text_size">Size: </p>
+                        <p class="cart_text_quantity">Quantity: <input class="cart_input_quantity" type="number"
+                                max="99" min="1" value="1"></p>
+                    </div>
+                    <a href="#"><i class="fas fa-times cart_shoping_close_button"></i></a>
+                </div>
+                <div class="cart_shoping_button">
+                    <div class="cart_shoping_left_button">
+                        <a class="cart_shoping_left_button_link" href="#">
+                            <p class="cart_shoping_left_button_text">Clear shopping cart</p>
+                        </a>
+                    </div>
+                    <div class="cart_shoping_right_button">
+                        <a class="cart_shoping_right_button_link" href="catalog.html">
+                            <p class="cart_shoping_right_button_text">Continue shopping</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_shoping_cart_right">
+                <form class="cart_shoping_form" action="#">
+                    <label for="adress_country" class="cart_shoping_cart_right_text">shipping adress</label>
+                    <input class="cart_shoping_input" id="adress_country" type="text" placeholder="Country" required
+                        maxlength="20">
+                    <label for="adress_state"></label>
+                    <input class="cart_shoping_input" id="adress_state" type="text" placeholder="State" required
+                        maxlength="20">
+                    <label for="adress_postcode"></label>
+                    <input class="cart_shoping_input" id="adress_postcode" type="text" placeholder="Postcode / Zip"
+                        maxlength="10" required>
+                    <input class="cart_shoping_input" type="submit" value="GET A QUOTE">
+                </form>
+                <div class="cart_shoping_total_coast">
+                    <p class="cart_shoping_total_coast_text_1">SUB TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <p class="cart_shoping_total_coast_text_2">GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <hr>
+                    <a class="cart_shoping_total_coast_button" href="#">
+                        <p class="cart_shoping_total_coast_text_3">PROCEED TO CHECKOUT</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_up">
+            <div class="container forma_footer">
+                <div class="forma">
+                    <img src="images/Forma_1.png" alt="forma">
+                    <h5 class="text_forma_h5">Free Delivery</h5>
+                    <p class="text_forma_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+                <div class="forma">
+                    <img src="images/Forma_2.png" alt="forma">
+                    <h5 class="text_forma_h5">Sales & discounts</h5>
+                    <p class="text_forma_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+                <div class="forma">
+                    <img src="images/Forma_3.png" alt="forma">
+                    <h5 class="text_forma_h5">Quality assurance</h5>
+                    <p class="text_forma_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container_fluid footer_bg_image">
+            <div class="container footer_center">
+                <figure class="footer_center_left">
+                    <img src="images/face.png" alt="picture">
+                    <p class="footer_center_left_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum“</p>
+                </figure>
+                <div class="footer_center_right">
+                    <p class="footer_center_right_text_1">SUBSCRIBE</p>
+                    <p class="footer_center_right_text_2">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#">
+                        <div class="input_round">
+                            <input class="email" type="email" placeholder="Enter Your Email" size="28">
+                            <button class="submit" type="submit" value="Subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="container footer_box">
+                <div class="footer_down_left">
+                    <p class="footer_down_left_text">© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="footer_down_right">
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_1.png"
+                            alt="icons"></a>
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_2.png"
+                            alt="icons"></a>
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_3.png"
+                            alt="icons"></a>
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_4.png"
+                            alt="icons"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

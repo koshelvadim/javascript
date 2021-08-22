@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INERNET-SHOP</title>
+    <script src="https://kit.fontawesome.com/d5b67c0e16.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container_fluid bg_dark">
+            <nav class="container top">
+                <div class="navbar_left">
+                    <a href="index.html"><img src="images/logo.svg" alt="picture"></a>
+                    <input type="checkbox" id="search">
+                    <label for="search" class="menu_padding"><i class="fas fa-search"></i></label>
+                    <form class="menu_search">
+                        <input type="search" class="menu_search_input" placeholder="Search" aria-label="Search" />
+                    </form>
+                </div>
+                <div class="navbar_right">
+                    <input type="checkbox" id="menu" checked>
+                    <label for="menu" class="menu_padding"><i class="fas fa-bars"></i></label>
+                    <nav class="main_menu">
+                        <label for="menu" class="close_item">
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <h5 class="text_menu_box_h5">Menu</h5>
+                        <a href="catalog.html" class="menu_link_h6">
+                            <h6 class="text_menu_box_h6">Men</h6>
+                        </a>
+                        <a href="#" class="menu_link">Accessories</a>
+                        <a href="#" class="menu_link">Bags</a>
+                        <a href="#" class="menu_link">Denim</a>
+                        <a href="#" class="menu_link">T-Shirts</a>
+                        <a href="catalog.html" class="menu_link_h6">
+                            <h6 class="text_menu_box_h6">Women</h6>
+                        </a>
+                        <a href="#" class="menu_link">Accessories</a>
+                        <a href="#" class="menu_link">Jackets & Coats</a>
+                        <a href="#" class="menu_link">Polos</a>
+                        <a href="#" class="menu_link">T-Shirts</a>
+                        <a href="#" class="menu_link">Shirts</a>
+                        <a href="catalog.html" class="menu_link_h6">
+                            <h6 class="text_menu_box_h6">Kids</h6>
+                        </a>
+                        <a href="#" class="menu_link">Accessories</a>
+                        <a href="#" class="menu_link">Jackets & Coats</a>
+                        <a href="#" class="menu_link">Polos</a>
+                        <a href="#" class="menu_link">T-Shirts</a>
+                        <a href="#" class="menu_link">Shirts</a>
+                        <a href="#" class="menu_link">Bags</a>
+                    </nav>
+                    <a class="menu_padding vision_none" href="registration.html"><i class="far fa-user"></i></a>
+                    <a class="menu_padding vision_none" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="product">
+        <div class="catalog_header_bg">
+            <div class="container catalog_header">
+                <div class="catalog_header_text">
+                    <h2 class="catalog_header_text_h2">NEW ARRIVALS</h2>
+                </div>
+                <div class="breadcrump_catalog_header">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb_item"><a href="#" class="breadcrumb_list">HOME</a></li>
+                            <li class="breadcrumb_item"><a href="#" class="breadcrumb_list">MEN</a></li>
+                            <li class="breadcrumb_item active"><a href="#" class="breadcrumb_list active">NEW
+                                    ARRIVALS</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="product_carousel_bg">
+            <div class="container_fluid">
+                <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+                    <div class="carousel_box">
+                        <div class="carousel_conrol_previous">
+                            <a href="#"><i class="fas fa-angle-left carousel_control_left"></i></a>
+                        </div>
+                        <div class="carousel-item active">
+                            <img class="product_carousel_image" src="images/product_items_1.png" alt="picture" />
+                        </div>
+                        <div class="caroousel_conrol_next">
+                            <a href="#"><i class="fas fa-angle-right carousel_control_right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="product_card">
+            <div class="product_card_top">
+                <p class="product_name_collecion_text_p">women collection</p>
+                <span class="product_name_collecion_line"></span>
+                <p class="product_name_text_p">moschino chea nd chic</p>
+                <p class="product_characteristics_text_p">Compellingly actualize fully researched processes before
+                    proactive outsourcing. Progressively syndicate collaborative architectures before
+                    cutting-edge services. Completely visualize parallel core competencies rather than
+                    exceptional portals.</p>
+                <p class="product_coast_text_p">$561</p>
+                <hr class="product_card_hr">
+            </div>
+            <div class="product_card_box_filter">
+
+                <div class="product_card_filter_color">
+                    <input type="checkbox" id="filter_color">
+                    <label for="filter_color" class="filter_link">
+                        <span class="text_filter_box_center_p">color</span>
+                        <i class="fas fa-angle-down filter_cursor_down"></i>
+                    </label>
+                    <nav class="filter_box_nav_color">
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="color_1">
+                            <span class="filter_box_span_color_1"></span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="color_2">
+                            <span class="filter_box_span_color_2"></span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="color_3">
+                            <span class="filter_box_span_color_3"></span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="color_4">
+                            <span class="filter_box_span_color_4"></span>
+                        </div>                      
+                    </nav>
+                </div>
+                <div class="product_card_filter_size">
+                    <input type="checkbox" id="filter_size">
+                    <label for="filter_size" class="filter_link">
+                        <span class="text_filter_box_center_p">choose size</span>
+                        <i class="fas fa-angle-down filter_cursor_down"></i>
+                    </label>
+                    <nav class="filter_box_nav_size">
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="size_1">
+                            <span class="filter_box_span">S</span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="size_2">
+                            <span class="filter_box_span">M</span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="size_3">
+                            <span class="filter_box_span">L</span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="size_4">
+                            <span class="filter_box_span">XL</span>
+                        </div>
+                    </nav>
+                </div>
+                <div class="product_card_filter_quantity">
+                    <input type="checkbox" id="filter_quantity">
+                    <label for="filter_quantity" class="filter_link">
+                        <span class="text_filter_box_center_p">quantity</span>
+                        <i class="fas fa-angle-down filter_cursor_down"></i>
+                    </label>
+                    <nav class="filter_box_nav_quantity">
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="quantity_1">
+                            <span class="filter_box_span">1</span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="quantity_2">
+                            <span class="filter_box_span">2</span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="quantity_3">
+                            <span class="filter_box_span">3</span>
+                        </div>
+                        <div class="trending_nav_items">
+                            <input type="checkbox" id="quantity_4">
+                            <span class="filter_box_span">4</span>
+                        </div>
+                    </nav>
+                </div>
+            
+            </div>
+            <div class="product_card_box">
+                <a class="product_add_to_cart" href="cart.html">
+                    <i class="fas fa-shopping-cart shop_add"></i>
+                    <p class="product_add_to_cart_text_p">Add to Cart</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="product_card_container">
+                <div class="card_box">
+                    <a class="card" href="product.html">
+                        <img class="images_card" src="images/items_4.png" alt="picture">
+                        <div class="card_text">
+                            <h5 class="text_card_h5">ELLERY X M'O CAPSULE</h5>
+                            <p class="text_card_p">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="text_cash">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add_box">
+                        <a class="add_to_cart" href="cart.html">
+                            <img class="images_add" src="images/add_to_cart.png" alt="picture">
+                            <p class="text_add_to_cart_p">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card_box vision_none">
+                    <a class="card" href="product.html">
+                        <img class="images_card" src="images/items_3.png" alt="picture">
+                        <div class="card_text">
+                            <h5 class="text_card_h5">ELLERY X M'O CAPSULE</h5>
+                            <p class="text_card_p">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="text_cash">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add_box">
+                        <a class="add_to_cart" href="cart.html">
+                            <img class="images_add" src="images/add_to_cart.png" alt="picture">
+                            <p class="text_add_to_cart_p">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card_box">
+                    <a class="card" href="product.html">
+                        <img class="images_card" src="images/items_6.png" alt="picture">
+                        <div class="card_text">
+                            <h5 class="text_card_h5">ELLERY X M'O CAPSULE</h5>
+                            <p class="text_card_p">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="text_cash">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add_box">
+                        <a class="add_to_cart" href="cart.html">
+                            <img class="images_add" src="images/add_to_cart.png" alt="picture">
+                            <p class="text_add_to_cart_p">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_up">
+            <div class="container forma_footer">
+                <div class="forma">
+                    <img src="images/Forma_1.png" alt="forma">
+                    <h5 class="text_forma_h5">Free Delivery</h5>
+                    <p class="text_forma_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+                <div class="forma">
+                    <img src="images/Forma_2.png" alt="forma">
+                    <h5 class="text_forma_h5">Sales & discounts</h5>
+                    <p class="text_forma_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+                <div class="forma">
+                    <img src="images/Forma_3.png" alt="forma">
+                    <h5 class="text_forma_h5">Quality assurance</h5>
+                    <p class="text_forma_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container_fluid footer_bg_image">
+            <div class="container footer_center">
+                <figure class="footer_center_left">
+                    <img src="images/face.png" alt="picture">
+                    <p class="footer_center_left_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum“</p>
+                </figure>
+                <div class="footer_center_right">
+                    <p class="footer_center_right_text_1">SUBSCRIBE</p>
+                    <p class="footer_center_right_text_2">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#">
+                        <div class="input_round">
+                            <input class="email" type="email" placeholder="Enter Your Email" size="28">
+                            <button class="submit" type="submit" value="Subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="container footer_box">
+                <div class="footer_down_left">
+                    <p class="footer_down_left_text">© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="footer_down_right">
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_1.png"
+                            alt="icons"></a>
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_2.png"
+                            alt="icons"></a>
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_3.png"
+                            alt="icons"></a>
+                    <a class="footer_down_right_link" href="#"><img class="footer_icon" src="images/icon_4.png"
+                            alt="icons"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
