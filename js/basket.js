@@ -4,6 +4,9 @@
  const linkBasketButton = document.querySelector('.fa-shopping-cart');
  const linkBasketTotalCoast = document.querySelector('.totalCoast');
 
+ /**
+  * слушает событие клика на иконке корзины и переключает класс "hidden" в HTML
+  */
 linkBasketButton.addEventListener('click', function() {
     document.querySelector('div.basket').classList.toggle('hidden');
 });
@@ -35,7 +38,10 @@ function renderProductInBaket(productId) {
         renderNewProductInBasket(productId);
     }
 }
-
+/**
+ * функция добавляет новый товар в корзину по шаблону
+ * @param {*} productId 
+ */
 function renderNewProductInBasket(productId) {
     let productRow = `
     <div class="newrow">
@@ -65,7 +71,9 @@ function reclculateSumForProduct(productId) {
     let totalPriceRow = (basket[productId] * products[productId].price).toFixed(2);
     linkProductTotalRow.textContent = totalPriceRow;
 }
-
+/**
+ * функция расчитывает окончательную стоимость товаров в корзине
+ */
 function calculateTotalCoastBasket() {
     let totalCoast = 0;
     for(let productId in basket){
