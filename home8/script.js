@@ -7,27 +7,27 @@
 // …
 // 10 – четное число
 
-// for (let i = 0; i <= 11; i++) {
-//     if(i === 0) {
-//         console.log(`${i} - это ноль`);
-//     } else if (i % 2 !==0) {
-//         console.log(`${i} - нечетное число`);
-//     } else console.log(`${i} - четное число`);
-// }
+for (let i = 0; i <= 11; i++) {
+    if(i === 0) {
+        console.log(`${i} - это ноль`);
+    } else if (i % 2 !==0) {
+        console.log(`${i} - нечетное число`);
+    } else console.log(`${i} - четное число`);
+}
 
 // Задание 2
 // Дан массив [1, 2, 3, 4, 5, 6, 7]
 // Сделайте из этого массива следующий [1, 2, 3, 6, 7]
 
-// const array = [1, 2, 3, 4, 5, 6, 7];
+const arr = [1, 2, 3, 4, 5, 6, 7];
 
-// for (let i = 0; i < array.length; i++) {
-//     if (i === 3) {
-//         array.splice(i, 2);
-//     }
-// }
+for (let i = 0; i < arr.length; i++) {
+    if (i === 3) {
+        arr.splice(i, 2);
+    }
+}
 
-// console.log(array);
+console.log(arr);
 
 // Задание 3
 // Используя Math.random() вам необходимо генерировать цифры от 0 до 9, и создать массив состоящий из 5 таких элементов
@@ -87,6 +87,6 @@ else console.log('числа нет');
 
 let str = "x";
 for (let i = 0; i < 20; i++) {
-  console.log(str + '\n');
+  console.log(str);
   str += "x"
 }
